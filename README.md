@@ -17,7 +17,6 @@ A Python client library for interacting with the RagFlow API. This package provi
 - [CLI Usage](#cli-usage)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 

@@ -1,1 +1,72 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# PyPI configuration
+.pypirc
+~/.pypirc
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Project specific
+test_case/
 test_case
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Logs
+*.log
+logs/
+
+# Build docs
+docs/_build/
+site/
+
+# Local development
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+python_package_deployment_guide.md

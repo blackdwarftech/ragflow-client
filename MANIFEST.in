@@ -1,0 +1,5 @@
+include LICENSE.md
+include README.md
+include requirements.txt
+include .env.example
+recursive-include ragflow_client *.py

@@ -12,7 +12,10 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/blackdwarftech/ragflow-client",
-    packages=find_packages(),
+    packages=find_packages(include=['ragflow_client*']),
+    package_data={
+        'ragflow_client': ['*.md', '*.txt', '.env.example']
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -30,4 +33,4 @@ setup(
             "ragflow=ragflow_client.cli:main",
         ],
     },
-) 
+)

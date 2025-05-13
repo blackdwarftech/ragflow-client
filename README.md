@@ -322,14 +322,12 @@ print(f"Dataset '{dataset_name}' created")
 
 # Upload documents
 pdf_folder = "research_pdfs"
-pdf_files = [os.path.join(pdf_folder, f) for f in os.listdir(pdf_folder) if f.endswith('.pdf')]
+files = ["document1.pdf", "document2.docx", "document3.txt", "document4.xlsx"]
 upload_result = client.upload_document(dataset_name, pdf_files)
 print(f"Uploaded {upload_result['count']} documents")
 
 # Create a session
 session_name = "research_session"
-client.create_session(dataset_name, session_name)
-print(f"Session '{session_name}' created")
 
 # Ask questions
 questions = [

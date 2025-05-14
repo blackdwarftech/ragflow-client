@@ -5,6 +5,7 @@ from typing import Dict, Any, Optional
 
 from ragflow_client.api.document import DocumentAPI
 from ragflow_client.utils.api_utils import make_request, ResponseError
+from ragflow_client.api.prompt.chat_prompt import ChatPrompt
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -18,9 +19,9 @@ class ChatAssistantAPI(DocumentAPI):
     """
     
     def create_chat_assistant(self, dataset_name: str, 
-                              temperature: float = 0.3, 
-                              top_p: float = 1.0, 
-                              presence_penalty: float = 0.4,
+                              temperature: float = 0.50, 
+                              top_p: float = 0.50, 
+                              presence_penalty: float = 0.40,
                               top_n: int = 10,
                               enable_knowledge_graph: bool = True) -> Dict[str, Any]:
         """
@@ -65,6 +66,7 @@ class ChatAssistantAPI(DocumentAPI):
             "prompt": {
                 "top_n": top_n,
                 "knowledge_graph": enable_knowledge_graph,
+                "prompt": ChatPrompt
             }
         }
         
